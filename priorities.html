@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>STC 2017 Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" href="css/bootstrap-stars.css">
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+	 <style>
+		  
+		  .affix {
+			  top: 50px; 
+			  background-color: #fff;
+			  z-index: 2;
+		  }
+		 .progress {margin-top: 1em;} 
+		 .blocks div {margin-bottom: 1em;}
+		 	#qty { background: transparent; border: 0}
+			
+			.blocks p {max-width: 250px;}
+	</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#budget-panel" data-offset="50">
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="../" class="navbar-brand">State Transportation Commission</a>
+        
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+
+      <div class="page-header" id="banner">
+        <div class="row">
+          <div class="col-lg-12 col-md-7 col-sm-6">
+            <h1>What's important to you</h1>
+			<p>Rank how important each statement is to you by selecting 0 to 5 stars for each one.  0 for least important and 5 for very important.  There are a total of ____ stars to use for this exercise.</p>
+			<ol>
+				<li>Click on a star to select between 1 and 5 stars for each statement below. To rank 0, do not click on any stars.</li>
+				<li>To change your ranking, click on a star left of the last star selected to decrease; or to the right of the last star selected to increase your ranking.</li>
+				<li>Upon completion, click 'See Results' to view a summary of your choices.</li>
+			</ol>
+          </div>
+
+        </div>
+      </div>
+	  
+		<div class="row">
+			<div class="col-lg-4 col-s-4 col-xs-12">
+				<div class="panel panel-info" data-spy="affix" data-offset-top="197" id="budget-panel">
+				  
+				  <div class="panel-heading" id="remaining-stars">Stars Remaining <input id="qty" value="30" /> </div>
+				</div>
+			</div>
+		</div>
+	  
+		<div class="row blocks">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+					<img src="http://placehold.it/250x250">				
+					<p>Aviation - Modernize facilities,  improve operations and broaden commercial airline choices at airports</p>
+						<select class="priority-rating" id="aviation1">
+							<option value="" selected></option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+				<img src="http://placehold.it/250x250">				
+				<p>Congestion - New roads and additional travel lanes to move people more efficiently</p>
+						<select class="priority-rating" id="bridges1">
+							<option value="" selected></option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+				</div>
+	
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+				<img src="http://placehold.it/250x250">
+				<p>Technology - More Intelligent Transportation Systems (ITS) to alert drivers to traffic, roadway, and weather conditions and improve traffic flow</p>
+						<select class="priority-rating" id="bikeped1">
+							<option value="" selected></option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+				<img src="http://placehold.it/250x250">				
+					<p>Maintenance - More repair and restoration of existing roadways to increase reliability and performance</p>
+						<select class="priority-rating" id="Lorem1">
+							<option value="" selected></option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+				</div>
+		</div>
+		<div class="row blocks">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+				<img src="http://placehold.it/250x250">				
+				<p>Walking - More walkable routes to schools, employment centers and shopping</p>
+						<select class="priority-rating" id="Lorem2">
+							<option value="" selected></option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+				<img src="http://placehold.it/250x250">				
+				<p>Bridges - Replace or rehabilitate bridges with height, weight, and width restrictions</p>
+						<select class="priority-rating" id="Lorem3">
+							<option value="" selected></option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+				<img src="http://placehold.it/250x250">				
+					<p>Freight - Improve railways, roadways, airports and waterways to support commerce</p>
+						<select class="priority-rating" id="Lorem4">
+							<option value="" selected></option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+				<img src="http://placehold.it/250x250">				
+				<p>Transit - Improve access to public transportation and expanded service areas that cross regions </p>
+						<select class="priority-rating" id="Lorem6">
+							<option value="" selected></option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+				</div>
+		</div>
+		<div class="row blocks">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+				<img src="http://placehold.it/250x250">				
+					<p>Biking - Build more bike lanes to encourage bike use, reduce vehicle emissions, and promote good health</p>
+						<select class="priority-rating" id="Lorem7">
+							<option value="" selected></option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+				<img src="http://placehold.it/250x250">				
+				<p>Passenger Rail - Improve passenger rail service in Pennsylvania and increase out- of-state connections</p>
+						<select class="priority-rating" id="Lorem8">
+							<option value="" selected></option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+				<img src="http://placehold.it/250x250">				
+				<p>Stormwater Management - More investment in stormwater management to reduce pollution and flooding</p>
+						<select class="priority-rating" id="Lorem8">
+							<option value="" selected></option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+				</div>
+		</div>
+		
+
+
+
+		
+		<div class="row" style="margin-top: 1em;">				
+		
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">See Results</button> 			<a href="#">Suggest another priority</a>
+
+			
+			<div class="progress">
+			  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+			  aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+				20% Complete
+			  </div>
+			</div>
+		
+		</div>
+
+	 
+
+  
+
+
+ <footer>
+        <div class="row">
+          <div class="col-lg-12">
+			<hr style="margin-top: 15em;"/>
+            <ul class="list-unstyled">
+              <li class="pull-right"><a href="#top">Back to top</a></li>
+              <li><a href="http://talkpatransportation.com/">STC Homepage</a></li>
+              <li><a href="http://www.penndot.gov/Pages/default.aspx">PennDOT</a></li>
+              <li><a href="https://www.facebook.com/PennsylvaniaDepartmentofTransportation/">Facebook</a></li>
+              <li><a href="https://twitter.com/penndotnews">Twitter</a></li>
+             
+            </ul>
+            <p>Made by State Transportation Commmission. Contact us at <a href="mailto:RA-PennDOTSTC@pa.gov">RA-PennDOTSTC@pa.gov</a>.</p>
+            <p>To report an <em>immediate</em> state-owned road condition or concern, please call 1-800-FIX-ROAD or <a href="https://www.dot.state.pa.us/Internet/web.nsf/contactUsCCC?OpenForm">submit your concern online</a> at the customer care center.</p>
+
+          </div>
+        </div>
+ </footer>
+
+ <div class="row" id="vision-modal">
+
+			<!-- Modal -->
+			<div id="myModal" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">What’s Important to You</h4>
+				  </div>
+				  <div class="modal-body">
+					<p>Your rankings suggest the following transportation priority: </p>
+					
+					<img src="http://placehold.it/350x150" style="width: 100%">
+					<p>Pennsylvania has made progress in reducing the number of structurally deficient bridges; however, 16% of state-owned bridges and 35% of locally-owned bridges are structurally deficient. Repairing, maintaining, and replacing Pennsylvania’s bridges will help to meet these significant needs.</p>
+				  </div>
+				  <div class="modal-footer">
+					<a role="button" class="btn btn-primary" href="budget.html">Continue Survey</a>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Try Again</button>
+				  </div>
+				</div>
+
+			  </div>
+			</div>
+   </div>
+   
+
+   
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.barrating.js"></script>
+	<script type="text/javascript">
+	   $(function() {
+		  $('.priority-rating').barrating({
+			theme: 'bootstrap-stars',
+			allowEmpty: true,
+			emptyValue: 0,
+			deselectable: true,
+			onSelect: function(v, t, e){	
+				var arr = document.getElementsByClassName('priority-rating');
+				var tot=0;
+				for(var i=0;i<arr.length;i++){
+					if(parseInt(arr[i].value))
+						tot += parseInt(arr[i].value);
+				}
+				
+				
+				document.getElementById('qty').value = 30 - tot;
+				var remainingstars = document.getElementById('qty').value;
+				
+				
+				
+				<!-- var par = $(e.target).parent(); -->
+				<!-- alert(par.children(".disabled").length); -->
+				
+				if(remainingstars < 5){ 
+					$( "a[name='5']" ).not(".br-selected").addClass('glyphicon-star-empty disabled').removeClass('glyphicon-star').off().removeAttr("href");}
+				if(remainingstars < 4){ 
+					$( "a[name='4']" ).not(".br-selected").addClass('glyphicon-star-empty disabled').removeClass('glyphicon-star').off().removeAttr("href");}
+				if(remainingstars < 3){ 
+					$( "a[name='3']" ).not(".br-selected").addClass('glyphicon-star-empty disabled').removeClass('glyphicon-star').off().removeAttr("href");}
+				if(remainingstars < 2){ 
+					$( "a[name='2']" ).not(".br-selected").addClass('glyphicon-star-empty disabled').removeClass('glyphicon-star').off().removeAttr("href");}	
+				if(remainingstars < 1){ 
+					$( "a[name='1']" ).not(".br-selected").addClass('glyphicon-star-empty disabled').removeClass('glyphicon-star').off().removeAttr("href");}					
+		
+				if(remainingstars > 4){ 
+					$( "a[name='5']" ).not(".br-selected").removeClass('glyphicon-star-empty disabled').addClass('glyphicon-star').on().attr("href", "#");}
+				if(remainingstars > 3){ 
+					$( "a[name='4']" ).not(".br-selected").removeClass('glyphicon-star-empty disabled').addClass('glyphicon-star').on().attr("href", "#");}
+				if(remainingstars > 2){ 
+					$( "a[name='3']" ).not(".br-selected").removeClass('glyphicon-star-empty disabled').addClass('glyphicon-star').on().attr("href", "#");}
+				if(remainingstars > 1){ 
+					$( "a[name='2']" ).not(".br-selected").removeClass('glyphicon-star-empty disabled').addClass('glyphicon-star').on().attr("href", "#");}
+				if(remainingstars > 0){ 
+					$( "a[name='1']" ).not(".br-selected").removeClass('glyphicon-star-empty disabled').addClass('glyphicon-star').on().attr("href", "#");}	
+				},
+			
+			onClear:function(value, text) {
+
+				
+				
+				}
+			 
+		  });
+	   });
+	   
+
+		
+
+
+
+    
+	</script>
+  </body>
+</html>
