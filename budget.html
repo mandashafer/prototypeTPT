@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>STC 2017 Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+
+	<link rel="stylesheet" href="css/bootstrap-stars.css">
+		<link rel="stylesheet" href="css/bootstrap-slider.min.css">
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+	 <style>
+		  
+		  .affix {
+			  top: 50px; 
+			  background-color: #fff;
+
+			  z-index: 2 !important;
+			  
+		  }
+		  		 .progress {margin-top: 1em;} 
+				 
+				 .budget-category { 
+				 margin-bottom: 2em;
+	
+				}
+				
+				#qty { background: transparent; border: 0}
+
+	</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#budget-panel" data-offset="50">
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="../" class="navbar-brand"><img src="img/STC_logo.png" height="38px"/> State Transportation Commission</a>
+        
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+
+      <div class="page-header" id="banner">
+        <div class="row">
+          <div class="col-lg-12 col-md-7 col-sm-6">
+            <h1>How Much Would You Spend? </h1>
+			<p>The 12 Year Transportation Program covers projects for all transportation scenarios that can be funded within budget. Pennsylvania’s current 12 Year Program budget is around $62 billion. The budget below is set to 2017 program funding.  For this exercise you have a budget of $100.  Balance your budget to be successful.  Each scenario has a minimum funding level that's necessary to keep the system performing (indicated by a darker shade).</p>
+			
+			<ol>
+			<li>Increase or decrease each gauge to show how much you would spend for each scenario.</li>
+			<li>You cannot spend less than the minimum.</li>
+			<li>The budget amount will adjust based on your selections.</li>
+			<li>Once you have a balanced budget, select the "Continue Survey" button.</li>
+			</ol>
+
+          </div>
+
+        </div>
+      </div>
+	  
+
+
+		<div class="row">
+			<div class="col-lg-6 col-s-6 col-xs-12">
+				<div class="panel panel-info" data-spy="affix" data-offset-top="197" id="budget-panel">
+				  <div class="panel-heading">Your Budget: <input id="qty" value="100" readonly/> </div>
+				  <div class="panel-body" id="remaining-budget">
+				  
+				  <div class="progress" style="margin-top: 0; margin-bottom: 0; overflow: visible;">
+				  <div id="budget-marker" style="left: 45%; width: 20px; margin-left:-10px; text-align: center;" class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></div>
+				  </div>
+				  <div class="progress" style="margin-top: 0; margin-bottom: 0;">
+
+					  <div class="progress-bar progress-bar-warning" style="width:25%">
+						Under Budget
+					  </div>
+					  <div class="progress-bar progress-bar-success" style="width: 21%">
+						Within Budget
+					  </div>
+					  <div class="progress-bar progress-bar-danger" style="width: 54%">
+						Over Budget
+					  </div>
+					</div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	  
+		<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-4 text-center" id="b-maintenance">
+					<div class="budget-category">
+						<label for="maintenance" >Maintenance </label>
+						<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="tooltip" title="Ensure that all existing modes of transportation are maintained and preserved at a high level of reliability and performance. This includes, but is not limited to, highway resurfacing, bridge maintenance/rehabilitation and the purchase of replacement transit buses."></span> <br/>
+						<input type="text" id="maintenance" value="30" class="dial" data-stop="20"  data-min="0" data-max="45" data-bkgimg="img/maintenance.svg">
+					</div>	
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 text-center" id="b-capacity">
+					<div class="budget-category">				
+						<label for="capacity"> Increase Capacity</label>				
+						<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="tooltip" title="Congestion and “traffic jams” result when traffic demand approaches or exceeds the available capacity of the system. Building new roadways and reconstructing existing highways to increase capacity will ease traffic."></span> <br/>
+						<input type="text" id="capacity" value="15" class="dial" data-stop="10" data-min="0" data-max="25" data-bkgimg="img/capacity.svg"> 
+					</div>	
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 text-center" id="b-ridership">
+					<div class="budget-category">				
+						<label for="ridership">Grow Ridership</label> 
+						<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="tooltip" title="Public transit and passenger rail offer appealing alternatives to driving.  Investments could include new transit service, high-speed rail lines, and increased frequency of service."></span> <br/>
+						<input type="text" id="ridership" value="25" class="dial" data-stop="20" data-min="0" data-max="35" data-bkgimg="img/ridership.svg"> 
+					</div>	
+				</div>
+		</div>
+		<div class="row">				
+				<div class="col-xs-12 col-sm-6 col-md-4 text-center" id="b-nonmotorized">
+					<div class="budget-category">				
+						<label for="nonmotorized"> Expand Non-Motorized Network</label>
+						<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="tooltip" title="Focus investments on maintaining and expanding the non motorized systems, linking cities and communities. Investments could include bicycle lanes, pedestrian safety improvements and improved connections to other modes of transportation."></span> <br/>
+						<input type="text" id="nonmotorized" value="10" class="dial" data-stop="5" data-min="0" data-max="20" data-bkgimg="img/nonmotorized.svg"> 
+					</div>	
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 text-center" id="b-technology">
+					<div class="budget-category">				
+						<label for="technology">Technology</label>
+						<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="tooltip" title="Integrate state-of-the-art technology and Intelligent Transportation Systems (ITS) to improve the operations of the transportation network. Investments could include the integration of connected and autonomous vehicles technology, traffic cameras, and other highway, transit, and passenger rail technology"></span> <br/>						
+						<input type="text" id="technology" value="10" class="dial" data-stop="5" data-min="0" data-max="20" data-bkgimg="img/technology.svg"> 
+					</div>	
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 text-center" id="b-economic">
+					<div class="budget-category">				
+						<label for="economic">Support the Economy</label>				
+						<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="tooltip" title="Emphasize improvements to multimodal strategic assets and services to ensure reliable access to the state’s economic generators. This would include additional roadway capacity and last mile connections to support critical highway, rail, water, and airport facilities."></span> <br/>						
+						<input type="text" id="economic" value="10" class="dial" data-stop="5" data-min="0" data-max="20" data-bkgimg="img/economic.svg">
+					</div>	
+				</div>			
+		</div>
+		
+
+
+		
+
+		
+		
+		<div class="row">	
+				
+			
+			      <div  style="display: none" class="alert alert-dismissable alert-warning" id="balance-alert">
+					  <button type="button" class="close" data-dismiss="alert">×</button>
+					  <h4>Warning!</h4>
+					  <p>You must create a budget that is balanced. Please readjust the guages to stay within budget.</p>
+					</div>
+			<a role="submit" id="btnContinue" class="btn btn-primary" href="mapping.html">Continue Survey</a>
+			
+			<div class="progress">
+			  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+			  aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+				20% Complete
+			  </div>
+			</div>
+		
+		</div>
+
+		
+
+			<footer>
+					<div class="row">
+					  <div class="col-lg-12">
+						<hr style="margin-top: 15em;"/>
+						<ul class="list-unstyled">
+						  <li class="pull-right"><a href="#top">Back to top</a></li>
+						  <li><a href="http://talkpatransportation.com/">STC Homepage</a></li>
+						  <li><a href="http://www.penndot.gov/Pages/default.aspx">PennDOT</a></li>
+						  <li><a href="https://www.facebook.com/PennsylvaniaDepartmentofTransportation/">Facebook</a></li>
+						  <li><a href="https://twitter.com/penndotnews">Twitter</a></li>
+						 
+						</ul>
+						<p>Made by State Transportation Commmission. Contact us at <a href="mailto:RA-PennDOTSTC@pa.gov">RA-PennDOTSTC@pa.gov</a>.</p>
+						<p>To report an <em>immediate</em> state-owned road condition or concern, please call 1-800-FIX-ROAD or <a href="https://www.dot.state.pa.us/Internet/web.nsf/contactUsCCC?OpenForm">submit your concern online</a> at the customer care center.</p>
+
+					  </div>
+					</div>
+			  </footer>
+
+
+    </div>
+
+
+	
+	
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.knob.js" type="text/javascript"></script>
+		<script src="js/bootstrap-slider.min.js"></script>
+		<script>
+		
+	
+   		
+		$('[data-toggle="tooltip"]').tooltip(); 
+			$(function() {
+			
+			
+				$(".dial").knob(
+				{
+				'fgColor': "#3cb521",
+				'angleOffset':-125,
+				'angleArc':250,
+				'rotation': 'clockwise',
+				'displayInput': true,
+
+				'release' : function (v) { 
+				
+							
+							
+								
+				}
+
+				}
+				);
+			});
+			
+ $('#budget-bar').slider({
+        id: 'slider22',
+		tooltip: 'always',
+        min: 0,
+        max: 500000,
+        step: 1,
+        value: 0,
+        rangeHighlights: [{ "start": 0, "end": 150000 },
+                          { "start": 350000, "end": 500000 }]}); 
+		</script>
+  </body>
+</html>

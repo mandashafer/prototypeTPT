@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>STC 2017 Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" href="css/bootstrap-stars.css">
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+	 <style>
+		  
+
+
+	</style>
+
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="../" class="navbar-brand">State Transportation Commission</a>
+        
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+
+      <div class="page-header" id="banner">
+        <div class="row">
+          <div class="col-lg-12 col-md-7 col-sm-6">
+            <h1>Tell us your transportation issues</h1>
+<!--             <p class="lead">Instructions: Tell us your priorities by ranking each item. You will be given a statement about Pennsylvania transportation. Give it 0 to 5 stars with 1 being slightly important and 5 being very important to you. You have 15 stars to use between all statements.</p> -->
+          </div>
+
+        </div>
+      </div>
+	  
+	   <div class="row">
+    <div class="col-md-8">
+
+	  <iframe src="https://www.google.com/maps/embed/v1/view?zoom=9&center=40.2671%2C-76.8843&key=AIzaSyCVP6FXmCH-kQnogu-jt6IBIrqITgAYLOM" width="100%"  height="450" frameborder="0" style="border:0" ></iframe>
+      
+    </div>
+    <div class="col-md-4">
+      <div class="alert alert-dismissable alert-warning">
+		  <button type="button" class="close" data-dismiss="alert">×</button>
+		  <h4>Alert</h4>
+		  <p>You must be zoomed in to the local level to add a pin. Please enter a location in the search bar, or navigate to the location using the map.</p>
+		</div>
+ 
+			  <!-- Trigger the modal with a button -->
+		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mapModal">Add a Point</button>
+		<a type="button" class="btn btn-info btn-lg" href="demographics.html" >Finish</a>
+
+		<!-- Modal -->
+		<div id="mapModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Your transportation issues</h4>
+			  </div>
+			  <div class="modal-body">
+					
+					 <!-- Carousel -->
+								 <div id="carousel-example-generic" class="carousel slide">
+
+							   <!-- Wrapper for slides -->
+							   <div class="carousel-inner">
+								<div class="item active">
+								 <div class="well bs-component">
+									  <form id="form" class="form-horizontal" data-toggle="validator">
+										<fieldset>
+										  <legend>Map Point</legend>
+										  
+										  <div class="form-group">
+											<label for="select" class="col-lg-2 control-label">Category</label>
+											<div class="col-lg-10">
+											  <select class="form-control" id="select">
+												<option>Bridge Conditions</option>
+												<option>Freight</option>
+												<option>Pedestrian or Bike</option>
+												<option>Roadway</option>
+												<option>Safety</option>
+												<option>Transit</option>
+											  </select>
+											</div>
+										  </div>		
+										  <div class="form-group">
+											<label for="select" class="col-lg-2 control-label">Detail</label>
+											<div class="col-lg-10">
+											  <select class="form-control" id="select">
+												<option>Bridge Closure</option>
+												<option>Bridge in need of repair</option>
+												<option>Bridge weight restricted</option>
+												<option>Traffic and congestion</option>
+												<option>Other</option>
+											  </select>
+											</div>
+										  </div>	
+										  <div class="form-group">
+											<label for="inputPassword" class="col-lg-2 control-label">Corridor</label>
+											<div class="col-lg-10">
+											  <div class="checkbox">
+												<label>
+												  <input type="checkbox"> This point represents a corridor.
+												</label>
+											  </div>
+											</div>
+										  </div>
+										  <div class="form-group">
+											<label for="textArea" class="col-lg-2 control-label">Nearest feature</label>
+											<div class="col-lg-10">
+											  <textarea class="form-control" rows="2" id="textArea" required="true"></textarea>
+											  <span class="help-block">Please indicate the roadway, intersection or body of water that is closest to your point.</span>
+											</div>
+										  </div>
+										  <div class="form-group">
+											<label for="textArea" class="col-lg-2 control-label">Description</label>
+											<div class="col-lg-10">
+											  <textarea class="form-control" rows="6" id="textArea" required="true"></textarea>
+											  <span class="help-block">Please include as much detail as possible about your idea or concern.</span>
+											</div>
+										  </div>						  
+										  
+
+										 <button type="submit" class="btn btn-primary"  role="button" href="#carousel-example-generic" >Submit</button>
+										 <button type="button" class="btn btn-default" data-dismiss="modal">Delete Point</button>
+										</fieldset>
+									  </form>
+									</div>
+							 
+								</div>
+							   
+							   
+								   <div class="item">
+														<!-- Static Header -->
+												<div class="header-text">
+													<div class="col-md-12">
+														<h2>Paxton Creek Bridge</h2>
+														<p><label>Category:</label> Bridge Replacement </p>
+														<p><label>Description:</label> State Route 3018 (Herr Street) over Paxton Creek City of Harrisburg</p>
+														<p style="font-weight: 900">This project is near the location you mapped. Will this project address your idea or concern?</p>
+
+														<div class="">
+															<a role="button" class="btn btn-primary" href="#carousel-example-generic" role="button" data-slide="next">Yes</a>
+															<a role="button" class="btn btn-primary"  href="#carousel-example-generic" role="button" data-slide="next">No</a>
+															<a role="button" class="btn btn-primary"  href="#carousel-example-generic" role="button" data-slide="next">I don't know</a>
+															</div>
+															<p style="text-align: center; margin-top: 1em;"> 1 of 3 </p>
+													</div>
+												</div><!-- /header-text -->
+								   </div>
+								   <div class="item">
+								  
+									<!-- Static Header -->
+												<div class="header-text">
+													<div class="col-md-12">
+														<h2>Derry Street Safety Imprv</h2>
+														<p><label>Category:</label> Safety Improvement </p>
+														<p><label>Description:</label> Corridor Safety Improvements including new advisory signs, pavement markings, traffic signal upgrades at multiple intersections, potential construction of turning lanes and other safety improvements on SR 3012.</p>
+														<p style="font-weight: 900">This project is near the location you mapped. Will this project address your idea or concern?</p>
+
+														<div class="">
+															<a role="button" class="btn btn-primary" href="#carousel-example-generic" role="button" data-slide="next">Yes</a>
+															<a role="button" class="btn btn-primary"  href="#carousel-example-generic" role="button" data-slide="next">No</a>
+															<a role="button" class="btn btn-primary"  href="#carousel-example-generic" role="button" data-slide="next">I don't know</a>
+															</div>
+															<p style="text-align: center; margin-top: 1em;"> 2 of 3 </p>
+													</div>
+												</div><!-- /header-text -->
+								   </div>
+								   <div class="item">
+								   
+									<!-- Static Header -->
+												<div class="header-text">
+													<div class="col-md-12">
+														<h2>E Shore Connection Bridge</h2>
+														<p><label>Category:</label> Pedestrian Facilities </p>
+														<p><label>Description:</label> Build a bike/ped connection bridge/ramp between the CAT Bridge and the Harrisburg Area Greenbelt, along Front Street. </p>
+														<p style="font-weight: 900">This project is near the location you mapped. Will this project address your idea or concern?</p>
+
+														<div class="">
+															<a role="button" class="btn btn-primary"  role="button"data-dismiss="modal">Yes</a>
+															<a role="button" class="btn btn-primary"   role="button" data-dismiss="modal">No</a>
+															<a role="button" class="btn btn-primary"  role="button" data-dismiss="modal">I don't know</a>
+															</div>
+															<p style="text-align: center; margin-top: 1em;"> 3 of 3 </p>
+													</div>
+												</div><!-- /header-text -->
+								   </div>
+							   </div>
+
+							  </div><!-- /carousel -->
+			  
+			  
+			  
+				 </div>
+			  <div class="modal-footer">
+				
+				
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+      
+    </div>
+  </div>
+  
+
+
+  
+
+
+     <footer>
+        <div class="row">
+          <div class="col-lg-12">
+			<hr style="margin-top: 15em;"/>
+            <ul class="list-unstyled">
+              <li class="pull-right"><a href="#top">Back to top</a></li>
+              <li><a href="http://talkpatransportation.com/">STC Homepage</a></li>
+              <li><a href="http://www.penndot.gov/Pages/default.aspx">PennDOT</a></li>
+              <li><a href="https://www.facebook.com/PennsylvaniaDepartmentofTransportation/">Facebook</a></li>
+              <li><a href="https://twitter.com/penndotnews">Twitter</a></li>
+             
+            </ul>
+            <p>Made by State Transportation Commmission. Contact us at <a href="mailto:RA-PennDOTSTC@pa.gov">RA-PennDOTSTC@pa.gov</a>.</p>
+            <p>To report an <em>immediate</em> state-owned road condition or concern, please call 1-800-FIX-ROAD or <a href="https://www.dot.state.pa.us/Internet/web.nsf/contactUsCCC?OpenForm">submit your concern online</a> at the customer care center.</p>
+
+          </div>
+        </div>
+	</footer>
+
+
+		 <div class="row" id="intro-modal">
+
+					<!-- Modal -->
+					<div id="myModal" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+
+						<!-- Modal content-->
+						<div class="modal-content">
+						  <div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Make Your Point</h4>
+						  </div>
+						  <div class="modal-body">
+						  <ol>
+							<li>Tap or click on the map to zoom into the area where your transportation issue is located.  </li>
+							<li>Tap or click again to drop a pin to mark the spot.  </li>
+							<li>You will then be asked a series of questions about each location. Please answer all questions to the best of your ability. </li>
+
+							<li>In some cases, there may be an existing project that will address your concern. If there is a project near your pin, you will be provided with its information. Answer Yes, No, or I don’t know as prompted.  </li>
+
+									
+									<div class="progress">
+									  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+									  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+										70% Complete
+									  </div>
+									</div>
+			
+						  </div>
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-primary" data-dismiss="modal">Go to Map</button>							
+							<a role="button" class="btn btn-default" href="demographics.html">Skip this step</a>
+						  </div>
+						</div>
+
+					  </div>
+					</div>
+		</div>
+
+	  
+	  
+    </div>
+
+
+	
+	
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.knob.js" type="text/javascript"></script>
+	<script src="js/validator.min.js" type="text/javascript"></script>
+	
+	
+		<script type="text/javascript">
+    $(window).load(function(){
+        $('#myModal').modal('show');
+		});
+	
+		$('#carousel-example-generic').carousel({
+			interval: false
+		}); 
+		
+		$('#form').validator().on('submit', function (e) {
+		  if (e.isDefaultPrevented()) {
+			// handle the invalid form...
+		  } else {
+			e.preventDefault();
+			$('#carousel-example-generic').carousel('next');
+		  }
+		})
+</script>
+  </body>
+</html>
